@@ -33,7 +33,13 @@ function initCompareImage() {
 		stretch: true,
 		stretchOnClass : 'stretched', 
 		stretchOfFClass: 'stretched-off',
-		swipeThreshold: 1
+		swipeThreshold: 1,
+		
+		// callbacks
+		onInit: null,
+		onProcessChange: null,
+		onProcessReload: null,
+		onDestroy: null
 	};
 
 	CompareImage.prototype = {
