@@ -1,0 +1,64 @@
+.compare {
+	position: relative;
+	overflow: hidden;
+	-ms-touch-action: none;
+	-ms-user-select: none;
+}
+
+.compare img {
+	display: block;
+	height: auto;
+	width: 100%;
+}
+
+.compare .mask-standard,
+.compare .mask-modified,
+.compare .mask-standard .m,
+.compare .mask-modified .m {
+	-ms-touch-action: none;
+	-ms-user-select: none;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	height: 100%;
+}
+
+.compare .mask-standard,
+.compare .mask-modified {
+	z-index: 10;
+}
+
+.compare .mask-standard {
+	border-right: 2px solid #fff;
+}
+
+.compare .mask-modified {
+	z-index: 5;
+	width: 100%;
+}
+
+.compare .mask-modified .m{
+	z-index: 5;
+	width: 100%;
+}
+
+.compare.stretched .standard {
+	display: none;
+}
+
+.compare.stretched .modified {
+	opacity: 0;
+}
+
+.compare.stretched-off {
+	height: 460px;
+}
+
+.compare.stretched-off .standard,
+.compare.stretched-off .modified {
+	display: none;
+}
